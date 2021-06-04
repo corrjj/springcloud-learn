@@ -11,7 +11,10 @@ public class Test1 {
     @Test
     public void testGit(){
         UserService us = new UserService();
-
+        List<UserEntity> list = us.getAll();
+        for (UserEntity userEntity : list) {
+            System.out.println(userEntity.toString());
+        }
 
 
     }
