@@ -17,7 +17,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    private UserService userService;
+    private UserService userService;//仅声明,用注解完成自动装配,
 
     @RequestMapping(value = "getAll")
     public List<UserEntity> getUser() {
